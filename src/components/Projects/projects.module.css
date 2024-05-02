@@ -1,0 +1,30 @@
+@import "./projects.module.css";
+@import "../../vars.css";
+
+.container {
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.title {
+  font-size: 35px;
+  color: var(--color-text);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.containerBox {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+}
+@media screen and (max-width: 830px) {
+  .containerBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}

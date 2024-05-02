@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Spotify clone in React(Zustand)",
+    "imageSrc": "projects/spotify.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, eius?",
+    "skills": ["React", "Zustand", "Scss"],
+    "demo": "https://exam-7-ten.vercel.app/",
+    "source": "https://github.com/sardorbeksidikov/My-portifoliyo-Spotify"
+  },
+  {
+    "title": "Admin Panel",
+    "imageSrc": "projects/admin.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, eius?",
+    "skills": ["React", "Json-Server", "Scss"],
+    "demo": "https://admin-panel-n1.vercel.app/login",
+    "source": "https://github.com/sardorbeksidikov/AdminPanel"
+  },
+  {
+    "title": "Home Furniture",
+    "imageSrc": "projects/at-home.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, eius?",
+    "skills": ["HTML", "Scss"],
+    "demo": "https://exam-4-gamma.vercel.app/",
+    "source": "https://github.com/sardorbeksidikov/exam-4.git"
+  }
+]

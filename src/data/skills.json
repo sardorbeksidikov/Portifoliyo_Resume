@@ -1,0 +1,46 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "experience/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "experience/css.png"
+  },
+  {
+    "title": "Bootsrap",
+    "imageSrc": "experience/bootsrapt.png"
+  },
+  {
+    "title": "Tailwind Css",
+    "imageSrc": "experience/tailwand.jpeg"
+  },
+  {
+    "title": "Javascript",
+    "imageSrc": "experience/js.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "experience/react.png"
+  },
+  {
+    "title": "Redux",
+    "imageSrc": "experience/redux.png"
+  },
+  {
+    "title": "Redux-toolkit",
+    "imageSrc": "experience/toolkit.png"
+  },
+  {
+    "title": "Zustand",
+    "imageSrc": "experience/zustand.png"
+  },
+  {
+    "title": "TypeScript",
+    "imageSrc": "experience/ts.png"
+  },
+  {
+    "title": "Next.js",
+    "imageSrc": "experience/next.jpeg"
+  }
+]
