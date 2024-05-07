@@ -16,11 +16,11 @@
     "source": "https://github.com/sardorbeksidikov/AdminPanel"
   },
   {
-    "title": "Home Furniture",
-    "imageSrc": "projects/at-home.jpg",
+    "title": "Shop",
+    "imageSrc": "projects/shop.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, eius?",
-    "skills": ["HTML", "Scss"],
+    "skills": ["Next.js", "HeadlessUI", "Shopping cart"],
     "demo": "https://exam-4-gamma.vercel.app/",
-    "source": "https://github.com/sardorbeksidikov/exam-4.git"
+    "source": "https://github.com/sardorbeksidikov/Shop-Next.js"
   }
 ]
