@@ -18,10 +18,9 @@ export const MainPage = () => {
           <a target="_blank" href="https://github.com/sardorbeksidikov">
             <i id={styles.github} className="fa-brands fa-github"></i>
           </a>
-          <a target="_blank" href="https://www.instagram.com/prabingiri92/">
+          <a target="_blank" href="https://t.me/sardorbek_sidikov1">
             <FaTelegram id={styles.telegram} className="teletram-icon" />
           </a>
-         
         </div>
         <a
           target="_blank"

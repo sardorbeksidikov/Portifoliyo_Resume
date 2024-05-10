@@ -75,7 +75,7 @@ export const Contact = () => {
           <a target="_blank" href="https://github.com/prabeen6260">
             <i id={styles.github} className="fa-brands fa-github"></i>
           </a>
-          <a target="_blank" href="https://telegram.org/sardorbek_sidikov1">
+          <a target="_blank" href="https://t.me/sardorbek_sidikov1">
             <FaTelegram id={styles.telegram} className="teletram-icon" />
           </a>
         </div>
