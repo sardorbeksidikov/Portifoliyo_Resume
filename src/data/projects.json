@@ -21,6 +21,14 @@
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, eius?",
     "skills": ["Next.js", "HeadlessUI", "Shopping cart"],
     "demo": "https://github.com/sardorbeksidikov/SS-shop",
-    "source": ""
+    "source": "https://github.com/sardorbeksidikov/SS-shop"
+  },
+  {
+    "title": "Alif-shop",
+    "imageSrc": "projects/alif-shop.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, eius?",
+    "skills": ["React.js", "HeadlessUI", "Shopping cart"],
+    "demo": "https://alif-shop-n1.vercel.app",
+    "source": "https://github.com/sardorbeksidikov/Alif-shopN1"
   }
 ]

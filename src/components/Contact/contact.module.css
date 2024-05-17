@@ -28,11 +28,13 @@
 
 .gmail {
   margin-top: 20px;
+   margin-bottom: 10px;
   text-decoration: none;
+ 
   color: var(--color-text);
   color: #ffffff;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .socialIcons {

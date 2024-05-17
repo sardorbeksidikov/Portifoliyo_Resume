@@ -14,7 +14,8 @@
 }
 .containerBox {
   margin-top: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
   width: 100%;
