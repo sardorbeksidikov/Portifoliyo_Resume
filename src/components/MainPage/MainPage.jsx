@@ -8,7 +8,7 @@ export const MainPage = () => {
     <section className={styles.container}>
       <div className={styles.description}>
         <h2 className={styles.title}>Hello! I am Sardorbek</h2>
-        <h3 className={styles.text}> Frond end Develuper</h3>
+        <h3 className={styles.text}> Front end Develuper</h3>
         <div className={styles.socialIcons}>
           <a
             target="_blank"
