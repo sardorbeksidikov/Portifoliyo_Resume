@@ -27,14 +27,27 @@
 
 
 .gmail {
+  /* display: flex; */
+  align-items: center;
   margin-top: 20px;
-   margin-bottom: 10px;
+  align-items: center;
+   margin-bottom: 20px;
   text-decoration: none;
  
   color: var(--color-text);
   color: #ffffff;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 25px;
+}
+.emailbtn{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.emailicon{
+  font-size: 25px;
+  margin-top: 7px;
+  margin-right: 5px;
 }
 
 .socialIcons {
@@ -159,5 +172,14 @@
     text-align: center;
     padding-left: 50px;
     padding-right:50px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .gmail{
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  .title{
+    font-size: 30px;
   }
 }

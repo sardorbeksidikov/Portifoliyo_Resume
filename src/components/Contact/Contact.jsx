@@ -51,19 +51,30 @@ export const Contact = () => {
         <h3 className={styles.title}>Contact</h3>
 
         <div className={styles.contactphone}>
-          <div>
-            <a
-              className={styles.gmail}
-              href="mailto:sardorbeksidikov005@gmail.com">
-              <MdEmail /> : sardorbeksidikov005@gmail.com
-            </a>
+          <div className={styles.emailbtn}>
+            <div>
+              {" "}
+              <MdEmail className={styles.emailicon} />
+            </div>
+            <div>
+              <a
+                className={styles.gmail}
+                href="mailto:sardorbeksidikov005@gmail.com">
+                : sardorbeksidikov005@gmail.com
+              </a>
+            </div>
           </div>
-          <div>
-            <a
-              className={styles.gmail}
-              href="mailto:sardorbeksidikov005@gmail.com">
-              <FaPhoneVolume /> : +998-93-146-16-02
-            </a>
+          <div className={styles.emailbtn}>
+            <div>
+              <FaPhoneVolume className={styles.emailicon} />
+            </div>
+            <div>
+              <a
+                className={styles.gmail}
+                href="mailto:sardorbeksidikov005@gmail.com">
+                : +998-93-146-16-02
+              </a>
+            </div>
           </div>
         </div>
         <div className={styles.socialIcons}>
