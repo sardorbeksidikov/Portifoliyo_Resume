@@ -80,7 +80,7 @@ export const Contact = () => {
         <div className={styles.socialIcons}>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/prabeen-giri-2a8403203/">
+            href="https://www.linkedin.com/in/sardorbek-sdikov-b282162a0/">
             <i id={styles.linkedin} className="fa-brands fa-linkedin-in"></i>
           </a>
           <a target="_blank" href="https://github.com/prabeen6260">
