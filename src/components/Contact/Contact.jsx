@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styles from "./contact.module.css";
 import axios from "axios";
 import { FaTelegram } from "react-icons/fa";
@@ -9,41 +9,39 @@ export const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const handleName=(e)=>{
-    setName(e.target.value)
-  }
-  const handleEmail=(e)=>{
-    setEmail(e.target.value)
-  }
-  const handleMessage=(e)=>{
-    setMessage(e.target.value)
-  }
-  const handleSubmit = async(e)=>{
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleMessage = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = {
       name: name,
       email: email,
-      message: message
-    }
-    try{
-      const response = await axios.post("https://backend-for-portfolio.uc.r.appspot.com/message",formData);
-      if(response){
+      message: message,
+    };
+    try {
+      const response = await axios.post(
+        "https://backend-for-portfolio.uc.r.appspot.com/message",
+        formData
+      );
+      if (response) {
         setName("");
         setEmail("");
         setMessage("");
         alert("Message submitted successfully");
         console.log("working");
       }
-    }
-    catch(err){
+    } catch (err) {
       console.error(err);
     }
-  }
-
-
-
-
-
+  };
 
   return (
     <section className={styles.container} id="contact">
