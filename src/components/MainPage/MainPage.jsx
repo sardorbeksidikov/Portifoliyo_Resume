@@ -24,7 +24,7 @@ export const MainPage = () => {
         </div>
         <a
           target="_blank"
-          href="https://www.canva.com/design/DAGBxMndVYE/23YOoJi3lVKGKoFBIaKfAg/view?utm_content=DAGBxMndVYE&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+          href="file:///C:/Users/user/Downloads/Telegram%20Desktop/Resume.pdf"
           className={styles.resume}>
           Download Resume
         </a>
