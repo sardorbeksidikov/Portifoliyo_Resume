@@ -24,7 +24,7 @@ export const MainPage = () => {
         </div>
         <a
           target="_blank"
-          href="file:///C:/Users/user/Downloads/Telegram%20Desktop/Resume.pdf"
+          href="https://docs.google.com/document/d/1CWTykFXuYbaPJyr0XBdFFvIvnWBOQ912c17s3iQIh8E/edit?usp=sharing"
           className={styles.resume}>
           Download Resume
         </a>
