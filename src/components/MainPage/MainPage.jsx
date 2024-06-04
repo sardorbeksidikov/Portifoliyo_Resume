@@ -23,11 +23,13 @@ export const MainPage = () => {
           </a>
         </div>
         <a
+          href="/Resume.pdf"
           target="_blank"
-          href="https://docs.google.com/document/d/1CWTykFXuYbaPJyr0XBdFFvIvnWBOQ912c17s3iQIh8E/edit?usp=sharing"
+          rel="noopener noreferrer"
           className={styles.resume}>
           Download Resume
         </a>
+      
       </div>
       <img className={styles.img1} src={getUrl("main/img1.png")} />
       <div className={styles.blurOne} />
