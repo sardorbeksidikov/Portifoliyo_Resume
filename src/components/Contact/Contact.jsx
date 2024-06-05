@@ -8,15 +8,28 @@ import { MdEmail } from "react-icons/md";
 export const Contact = () => {
   const [form, setForm] = useState({
     name: "",
-    phone: '',
+    phone: "", // phone maydonini string sifatida belgilash
     message: "",
   });
   const telegram_bot_id = "7189675187:AAE30yoe6fPBLlyFNRLBHw6XCy0JGawoWGs";
-  //chat id
   const chat_id = 5250031198;
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    if (name === "phone") {
+      // Telefon raqamini faqat raqamlar bilan cheklash
+      const onlyNums = value.replace(/[^0-9]/g, "");
+      setForm({
+        ...form,
+        [name]: onlyNums,
+      });
+    } else {
+      setForm({
+        ...form,
+        [name]: value,
+      });
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -103,10 +116,10 @@ export const Contact = () => {
           />
           <input
             className={styles.email}
-            type="number"
-            placeholder="+998"
+            type="text"
+            placeholder="Phone number +998-"
             required
-            name="number"
+            name="phone"
             onChange={handleChange}
           />
           <textarea
