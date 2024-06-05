@@ -6,40 +6,38 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 export const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const handleName = (e) => {
-    setName(e.target.value);
-  };
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const handleMessage = (e) => {
-    setMessage(e.target.value);
+  const [form, setForm] = useState({
+    name: "",
+    phone: '',
+    message: "",
+  });
+  const telegram_bot_id = "7189675187:AAE30yoe6fPBLlyFNRLBHw6XCy0JGawoWGs";
+  //chat id
+  const chat_id = 5250031198;
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = {
-      name: name,
-      email: email,
-      message: message,
-    };
+    const { name, phone, message } = form;
     try {
-      const response = await axios.post(
-        "https://backend-for-portfolio.uc.r.appspot.com/message",
-        formData
+      await axios.post(
+        `https://api.telegram.org/bot${telegram_bot_id}/sendMessage`,
+        {
+          chat_id,
+          text: `New message from ${name} (${phone}):\n${message}`,
+        }
       );
-      if (response) {
-        setName("");
-        setEmail("");
-        setMessage("");
-        alert("Message submitted successfully");
-        console.log("working");
-      }
-    } catch (err) {
-      console.error(err);
+      // Display a success message to the user
+      document.getElementById("status").textContent =
+        "Message sent successfully!";
+    } catch (error) {
+      console.error("Error sending message:", error);
+      // Display an error message to the user
+      document.getElementById("status").textContent =
+        "Error sending message. Please try again later.";
     }
   };
 
@@ -51,7 +49,6 @@ export const Contact = () => {
         <div className={styles.contactphone}>
           <div className={styles.emailbtn}>
             <div>
-              {" "}
               <MdEmail className={styles.emailicon} />
             </div>
             <div>
@@ -67,9 +64,7 @@ export const Contact = () => {
               <FaPhoneVolume className={styles.emailicon} />
             </div>
             <div>
-              <a
-                className={styles.gmail}
-                href="mailto:sardorbeksidikov005@gmail.com">
+              <a className={styles.gmail} href="tel:+998931461602">
                 : +998-93-146-16-02
               </a>
             </div>
@@ -78,43 +73,54 @@ export const Contact = () => {
         <div className={styles.socialIcons}>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/sardorbek-sdikov-b282162a0/">
+            href="https://www.linkedin.com/in/sardorbek-sdikov-b282162a0/"
+            rel="noopener noreferrer">
             <i id={styles.linkedin} className="fa-brands fa-linkedin-in"></i>
           </a>
-          <a target="_blank" href="https://github.com/prabeen6260">
+          <a
+            target="_blank"
+            href="https://github.com/prabeen6260"
+            rel="noopener noreferrer">
             <i id={styles.github} className="fa-brands fa-github"></i>
           </a>
-          <a target="_blank" href="https://t.me/sardorbek_sidikov1">
-            <FaTelegram id={styles.telegram} className="teletram-icon" />
+          <a
+            target="_blank"
+            href="https://t.me/sardorbek_sidikov1"
+            rel="noopener noreferrer">
+            <FaTelegram id={styles.telegram} className="telegram-icon" />
           </a>
         </div>
       </div>
       <div className={styles.rightContainer}>
-        <form className={styles.formBox} action="/message" method="post">
+        <form className={styles.formBox} onSubmit={handleSubmit}>
           <input
             className={styles.name}
             type="text"
             placeholder="Your Name"
             required
             name="name"
-            onChange={handleName}></input>
+            onChange={handleChange}
+          />
           <input
             className={styles.email}
-            type="email"
-            placeholder="Your Email"
+            type="number"
+            placeholder="+998"
             required
-            name="email"
-            onChange={handleEmail}></input>
+            name="number"
+            onChange={handleChange}
+          />
           <textarea
             className={styles.textBox}
             placeholder="Your Message...."
             required
             name="message"
-            onChange={handleMessage}></textarea>
-          <button className={styles.submitBtn} onClick={handleSubmit}>
+            onChange={handleChange}
+          />
+          <button className={styles.submitBtn} type="submit">
             Submit
           </button>
         </form>
+        <div id="status" className={styles.status}></div>
       </div>
     </section>
   );
