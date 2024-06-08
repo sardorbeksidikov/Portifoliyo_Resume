@@ -46,6 +46,12 @@ export const Contact = () => {
       // Display a success message to the user
       document.getElementById("status").textContent =
         "Message sent successfully!";
+      // Formni tozalash
+      setForm({
+        name: "",
+        phone: "",
+        message: "",
+      });
     } catch (error) {
       console.error("Error sending message:", error);
       // Display an error message to the user
@@ -112,6 +118,7 @@ export const Contact = () => {
             placeholder="Your Name"
             required
             name="name"
+            value={form.name}
             onChange={handleChange}
           />
           <input
@@ -120,6 +127,7 @@ export const Contact = () => {
             placeholder="Phone number +998-"
             required
             name="phone"
+            value={form.phone}
             onChange={handleChange}
           />
           <textarea
@@ -127,6 +135,7 @@ export const Contact = () => {
             placeholder="Your Message...."
             required
             name="message"
+            value={form.message}
             onChange={handleChange}
           />
           <button className={styles.submitBtn} type="submit">

@@ -7,7 +7,7 @@ export const MainPage = () => {
   return (
     <section className={styles.container}>
       <div className={styles.description}>
-        <h2 className={styles.title}>Hello! I am Sardorbek</h2>
+        <h2 className={styles.title}>Hello! I Sardorbek</h2>
         <h3 className={styles.text}> Front end Developer</h3>
         <div className={styles.socialIcons}>
           <a
@@ -26,10 +26,10 @@ export const MainPage = () => {
           href="/Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className={styles.resume}>
+          className={styles.btn}>
           Download Resume
         </a>
-      
+       
       </div>
       <img className={styles.img1} src={getUrl("main/img1.png")} />
       <div className={styles.blurOne} />
