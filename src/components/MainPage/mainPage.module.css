@@ -172,6 +172,11 @@
     margin-right: 15%;
   }
 }
+@media screen and(max-width: 380px){
+  .img1{
+    width: 50%;
+  }
+}
 
 .btn {
   font-size: 1.2rem;

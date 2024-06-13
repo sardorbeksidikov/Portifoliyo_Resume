@@ -124,7 +124,7 @@ export const Contact = () => {
           <input
             className={styles.email}
             type="text"
-            placeholder="Phone number +998-"
+            placeholder="Phone number"
             required
             name="phone"
             value={form.phone}
