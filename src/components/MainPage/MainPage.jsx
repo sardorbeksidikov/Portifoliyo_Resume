@@ -30,6 +30,7 @@ export const MainPage = () => {
           Download Resume
         </a>
        
+       
       </div>
       <img className={styles.img1} src={getUrl("main/img1.png")} />
       <div className={styles.blurOne} />
