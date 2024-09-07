@@ -51,14 +51,33 @@ background:  linear-gradient(
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
+  position: relative; /* Pseudoelement uchun kerak */
 }
-li a:hover {
-  padding-block: 10px;
-  padding-inline: 10px;
-  border-radius: 10px;
-  transition: 0.3s;
-  box-shadow: 0.5px 0.5px 5px 0.5px #ffffff;
+
+.menuItems a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-text); /* Chiziqning rangi */
+  transition: width 0.5s ease; /* Chiziqning chiqish tezligi */
 }
+
+.menuItems a:hover::after {
+  width: 100%; /* Hover bo'lganda to'liq kenglikda chiziq chiqadi */
+}
+
+.menuItems a {
+  transition: color 0.3s ease;
+}
+
+.menuItems a:hover {
+  color: var(--color-hover); /* Hoverda matnning rangini o'zgartirish mumkin */
+}
+
+
 
 @media screen and (max-width: 830px) {
   .navbar {
